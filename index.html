@@ -288,6 +288,17 @@
                 font-size: 1.4rem;
             }
         }
+
+        /* Hero background responsiveness */
+        @media (max-width: 768px) {
+            .th-hero-bg {
+                background-size: cover !important;
+            }
+            .th-hero-wrapper {
+                height: auto !important;
+                min-height: 100vh;
+            }
+        }
         .space-bottom {
             padding-bottom: 10px !important;
         }
@@ -811,9 +822,9 @@ document.addEventListener('DOMContentLoaded', function() {
     </header><!--==============================
 Hero Area
 ==============================-->
-    <div class="th-hero-wrapper hero-1" id="hero" style="height: 100vh;">
+    <div class="th-hero-wrapper hero-1" id="hero" style="height: 110vh;">
         <div class="hero-inner">
-            <div class="th-hero-bg" data-bg-src="assets/img/banner.png"></div>
+            <div class="th-hero-bg" data-bg-src="assets/img/b88.png"></div>
             <div class="container th-container2">
                 <div class="row gy-60 align-items-center">
                     <!-- <div class="col-xxl-6 col-xl-4 col-lg-3">
