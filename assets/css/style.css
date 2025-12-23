@@ -11821,12 +11821,34 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
   /* Large devices */
 }
 
-.hero-1 .th-hero-bg::before {
+ .hero-1 .th-hero-bg::before {
   content: "";
   position: absolute;
   inset: 0;
   background: -webkit-linear-gradient(right, rgba(3, 6, 14, 0) -46.25%, rgba(3, 6, 14, 0.7) 68.02%);
   background: linear-gradient(270deg, rgba(3, 6, 14, 0) -46.25%, rgba(3, 6, 14, 0.7) 68.02%);
+} 
+@media (max-width: 768px) {
+    #hero {
+        min-height: 200px;
+        padding: 60px 0;
+    }
+
+    #hero .th-hero-bg {
+        background-size: 100% auto;
+        background-position: center top;
+    }
+}
+@media (max-width: 991px) {
+    #hero {
+        min-height: 200px;
+        padding: 60px 0;
+    }
+
+    #hero .th-hero-bg {
+        background-size: 100% auto;
+        background-position: center top;
+    }
 }
 
 .hero-1 .slider-pagination {
@@ -16746,6 +16768,7 @@ span.select2-selection.select2-selection--single:focus {
   line-height: 48px;
   letter-spacing: 0.8px;
   font-size: 40px;
+  
 }
 
 .counter-card2 .media-body .box-text {
