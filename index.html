@@ -1357,6 +1357,30 @@ function toggleRecruiterLayout() {
             recruiterSwiperMobile.destroy(true, true);
             recruiterSwiperMobile = null;
         }
+        // Init desktop swiper if not exists
+        const marqueeEl = document.querySelector('.recruiter-marquee .swiper');
+        if (marqueeEl && !marqueeEl.swiper) {
+            new Swiper(marqueeEl, {
+                breakpoints: {
+                    0: {
+                        slidesPerView: 'auto'
+                    }
+                },
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false
+                },
+                noSwiping: true,
+                speed: 1000,
+                spaceBetween: 50
+            });
+        }
+        // Start autoplay after delay
+        setTimeout(() => {
+            if (marqueeEl && marqueeEl.swiper) {
+                marqueeEl.swiper.autoplay.start();
+            }
+        }, 500);
     }
 }
 
@@ -1505,6 +1529,27 @@ function togglePlacementLayout() {
             placementSwiperMobile.destroy(true, true);
             placementSwiperMobile = null;
         }
+        // Init desktop swiper if not exists
+        const placementEl = document.querySelector('.placement-banner-slider .swiper');
+        if (placementEl && !placementEl.swiper) {
+            new Swiper(placementEl, {
+                loop: true,
+                speed: 6000,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false
+                },
+                slidesPerView: 1,
+                spaceBetween: 0,
+                allowTouchMove: false
+            });
+        }
+        // Start autoplay after delay
+        setTimeout(() => {
+            if (placementEl && placementEl.swiper) {
+                placementEl.swiper.autoplay.start();
+            }
+        }, 500);
     }
 }
 
@@ -1805,6 +1850,55 @@ function toggleMouLayout() {
             mouSwiperMobile.destroy(true, true);
             mouSwiperMobile = null;
         }
+        // Init desktop swipers if not exist
+        const topEl = document.querySelector('.mousSwiperTop');
+        if (topEl && !topEl.swiper) {
+            new Swiper(topEl, {
+                slidesPerView: 5,
+                spaceBetween: 30,
+                loop: true,
+                speed: 6000,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
+                allowTouchMove: false,
+                breakpoints:{
+                    320:{slidesPerView:2},
+                    768:{slidesPerView:3},
+                    1024:{slidesPerView:5}
+                }
+            });
+        }
+        const bottomEl = document.querySelector('.mousSwiperBottom');
+        if (bottomEl && !bottomEl.swiper) {
+            new Swiper(bottomEl, {
+                slidesPerView: 5,
+                spaceBetween: 30,
+                loop: true,
+                speed: 6000,
+                autoplay: {
+                    delay: 0,
+                    reverseDirection: true,
+                    disableOnInteraction: false,
+                },
+                allowTouchMove: false,
+                breakpoints:{
+                    320:{slidesPerView:2},
+                    768:{slidesPerView:3},
+                    1024:{slidesPerView:5}
+                }
+            });
+        }
+        // Start autoplay after delay
+        setTimeout(() => {
+            if (topEl && topEl.swiper) {
+                topEl.swiper.autoplay.start();
+            }
+            if (bottomEl && bottomEl.swiper) {
+                bottomEl.swiper.autoplay.start();
+            }
+        }, 500);
     }
 }
 
@@ -1815,40 +1909,6 @@ window.addEventListener('resize', toggleMouLayout);
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 <script>
-new Swiper(".mousSwiperTop", {
-    slidesPerView: 5,
-    spaceBetween: 30,
-    loop: true,
-    speed: 6000,
-    autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-    },
-    allowTouchMove: false,
-    breakpoints:{
-        320:{slidesPerView:2},
-        768:{slidesPerView:3},
-        1024:{slidesPerView:5}
-    }
-});
-
-new Swiper(".mousSwiperBottom", {
-    slidesPerView: 5,
-    spaceBetween: 30,
-    loop: true,
-    speed: 6000,
-    autoplay: {
-        delay: 0,
-        reverseDirection: true,
-        disableOnInteraction: false,
-    },
-    allowTouchMove: false,
-    breakpoints:{
-        320:{slidesPerView:2},
-        768:{slidesPerView:3},
-        1024:{slidesPerView:5}
-    }
-});
 </script>
 
  <style>
