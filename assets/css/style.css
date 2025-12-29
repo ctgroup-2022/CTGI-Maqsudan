@@ -11821,13 +11821,13 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
   /* Large devices */
 }
 
- .hero-1 .th-hero-bg::before {
+ /* .hero-1 .th-hero-bg::before {
   content: "";
   position: absolute;
   inset: 0;
   background: -webkit-linear-gradient(right, rgba(3, 6, 14, 0) -46.25%, rgba(3, 6, 14, 0.7) 68.02%);
   background: linear-gradient(270deg, rgba(3, 6, 14, 0) -46.25%, rgba(3, 6, 14, 0.7) 68.02%);
-} 
+}  */
 @media (max-width: 768px) {
     #hero {
         min-height: 200px;
@@ -32049,4 +32049,50 @@ Mentorship Area Home 3
     }
 }
 
+.feature-card-section {
+  padding: 120px 0;
+  background: #071952;
+  color: #fff;
+}
 
+.feature-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  position: relative;
+  padding: 35px 30px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+
+.card-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #991b1b, #dc2626);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.feature-card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #F0F0F0;
+}
+
+.feature-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cbd5f5;
+}
