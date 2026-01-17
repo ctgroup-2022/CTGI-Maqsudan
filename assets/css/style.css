@@ -2797,7 +2797,7 @@ textarea.is-invalid {
   padding-top: 40px;
   display: block;
   text-align: center;
-  background-color: #071952;
+  /* background-color: #071952; */
 }
 
 .th-menu-wrapper .mobile-logo svg {
@@ -2822,7 +2822,7 @@ textarea.is-invalid {
   font-size: 18px;
   z-index: 1;
   color: #F0F0F0;
-  background-color: var(--theme-color);
+  background-color:#F0F0F0;
 }
 
 .th-menu-wrapper .th-menu-toggle:hover {
@@ -2972,6 +2972,7 @@ textarea.is-invalid {
   border-bottom: none;
 }
 
+
 .th-menu-toggle {
   width: 56px;
   height: 56px;
@@ -3032,7 +3033,7 @@ textarea.is-invalid {
   top: 0;
   bottom: 0;
   z-index: 999;
-  background-color: #071952;
+  background-color: #F0F0F0;
 }
 
 .preloader .th-btn {
@@ -8665,11 +8666,26 @@ ol.wp-block-rss {
 }
 
 .header-logo {
-  padding: 10px 0;
+  padding: 0 0;
+ 
 }
 
+@media (max-width: 767px) {
+  .header-logo a:nth-child(2),
+  .header-logo a:nth-child(3) {
+    /* display: none; */
+  }
+  .header-logo {
+    margin-right: 0 !important;
+  }
+}
+@media (max-width: 767px) {
+  .header-logo a:nth-child(3) {
+    display: none;
+  }
+}
 .header-logo img {
-  max-width: 300px;
+  max-width: 180px;
   height: auto;
   object-fit: contain;
 }
@@ -11831,7 +11847,7 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
 @media (max-width: 768px) {
     #hero {
         min-height: 200px;
-        padding: 60px 0;
+        padding: 50px 0;
     }
 
     #hero .th-hero-bg {
