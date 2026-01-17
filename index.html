@@ -1471,55 +1471,113 @@ function toggleRecruiterLayout() {
 window.addEventListener('load', toggleRecruiterLayout);
 window.addEventListener('resize', toggleRecruiterLayout);
 </script>
-<section style="padding:80px 0; background:#F0F0F0;">
+<style>
+/* ===== SECTION STYLE ===== */
+
+.collab-section {
+    padding: 80px 0;
+    background: #F0F0F0;
+}
+
+/* Card Design */
+.collab-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    transition: all 0.3s ease;
+    border: #071952 2px dotted;
+}
+
+.collab-card img {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+
+
+/* ===== MOBILE: 2 LOGOS PER ROW ===== */
+@media (max-width: 576px) {
+
+    .collab-card {
+        padding: 15px;
+        height: 100px;
+        margin-left: 20px;
+    }
+
+    .collab-card img {
+        max-height: 90px;
+        width: auto;
+    }
+
+    .title-area h2 {
+        font-size: 1.6rem;
+    }
+
+}
+</style>
+
+
+<section class="collab-section">
     <div class="container">
 
-       <!-- Title -->
-        <div class="row justify-content-center text-center">
+        <!-- Title -->
+        <div class="row justify-content-center text-center mb-4">
             <div class="col-xl-8 col-md-10 col-12">
                 <div class="title-area">
                     <span class="sub-title text-anim">TECHNICAL COLLABORATION</span>
-                    <h2 class="sec-title text-anim2">Powering progress through technical partnership</h2>
-                    
+                    <h2 class="sec-title text-anim2">
+                        Powering progress through technical partnership
+                    </h2>
                 </div>
             </div>
         </div>
 
-        <!-- Collaboration Cards -->
-        <div class="row justify-content-center g-4">
+        <!-- Collaboration Logos -->
+        <div class="row justify-content-center g-3">
 
-            <!-- Card -->
-            <div class="col-lg-4 col-md-4 col-sm-6">
+            <!-- LOGO 1 -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-6">
                 <div class="collab-card">
                     <img src="assets/img/collabration logo/1.png" alt="Partner Logo">
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-6">
+            <!-- LOGO 2 -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-6">
                 <div class="collab-card">
                     <img src="assets/img/collabration logo/2.png" alt="Partner Logo">
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-6">
+            <!-- LOGO 3 -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-6">
                 <div class="collab-card">
                     <img src="assets/img/collabration logo/3.png" alt="Partner Logo">
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6">
+            <!-- LOGO 4 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="collab-card">
                     <img src="assets/img/collabration logo/4.png" alt="Partner Logo">
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-6">
+            <!-- LOGO 5 -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-6">
                 <div class="collab-card">
                     <img src="assets/img/collabration logo/5.png" alt="Partner Logo">
                 </div>
             </div>
 
         </div>
+
     </div>
 </section>
 
@@ -2407,85 +2465,10 @@ Hospitality & Catering Management
 Team Area  
 ==============================-->
      
-<!-- Inline CSS -->
-<style>
-/* Base Card Fix */
-.collab-card{
-    padding:20px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    height:130px;
-    border-radius:12px;
-    background:#fff;
-    transition:all 0.3s ease;
-    border: 3px solid #071952;
-}
-
-/* Image Control */
-.collab-card img{
-    max-width:100%;
-    max-height:90px;
-    object-fit:contain;
-}
 
 
   
-/* Tablets */
-@media (max-width: 991px){
-    .collab-card{
-        height:115px;
-    }
 
-    .collab-card img{
-        max-height:80px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 576px){
-    section{
-        padding:50px 0 !important;
-    }
-
-    .sec-title{
-        font-size:22px;
-        line-height:1.3;
-    }
-
-    .collab-card{
-        height:95px;
-        padding:15px;
-    }
-
-    .collab-card img{
-        max-height:65px;
-    }
-}
-
-
-</style>
-<br>
-<br>
-  <div class="highlight-strip">
-    <div class="marquee">
-        <span>
-            LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • 
-            LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • 
-            LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • 
-            LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong>
-             LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • 
-            LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • 
-            LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>Ct MAQSUDAN</strong> • 
-            LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong> CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong>
-            LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • 
-            LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • 
-            LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • 
-            LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong>
-        </span>
-    </div>
-</div>
-<br>
  <section class="campus-area-2 position-relative overflow-hidden space" id="campus-sec">
         <div class="container th-container3">
             <div class="row justify-content-lg-between justify-content-center align-items-center">
