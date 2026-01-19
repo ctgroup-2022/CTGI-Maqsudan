@@ -918,116 +918,14 @@ Hero Area
             </div>
         </div>
     </div>
-    <!--==============================
- Counter Area
- ==============================-->
-  <section class="icon-stats">
-  <div class="container">
-    <div class="icon-grid">
+    
 
-      <div class="icon-card">
-        <div class="icon-circle">
-          <i class="fas fa-award"></i>
-        </div>
-        <h3><span class="counter-number">25</span>+</h3>
-        <p>Years of Excellence</p>
-      </div>
+     
 
-      <div class="icon-card">
-        <div class="icon-circle">
-          <i class="fas fa-user-graduate"></i>
-        </div>
-        <h3><span class="counter-number">1</span> Lac</h3>
-        <p>Global Alumni</p>
-      </div>
-
-      <div class="icon-card">
-        <div class="icon-circle">
-          <i class="fas fa-briefcase"></i>
-        </div>
-        <h3><span class="counter-number">100</span>%</h3>
-        <p>Placement Assistance</p>
-      </div>
-
-      <div class="icon-card">
-        <div class="icon-circle">
-          <i class="fas fa-chart-line"></i>
-        </div>
-        <h3><span class="counter-number">88</span> LPA</h3>
-        <p>Highest Package</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-<style>
-  .icon-stats {
-  background: #071952;
-  padding: 100px 0;
-}
-
-.icon-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 35px;
-}
-
-.icon-card {
-   background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  padding: 25px 25px;
-  border-radius: 22px;
-  text-align: center;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-  transition: 0.4s ease;
-  position: relative;
-}
-
-/* .icon-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
-} */
-
-.icon-circle {
-  width: 75px;
-  height: 75px;
-  background: #ffd700;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 18px;
-  font-size: 28px;
-  color: #071952;
-  box-shadow: 0 8px 20px rgba(200,163,73,0.4);
-}
-
-.icon-card h3 {
-  font-size: 3rem;
-  font-weight: 800;
-  color: #F0F0F0;
-  margin-bottom: 8px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.icon-card p {
-  font-size: 20px;
-  font-weight: bold;
- 
-  color: #F0F0F0;
-}
-
-</style>
-  
-      <br>
-        <br>
     <!--==============================
 About Area  3
 ==============================-->
-    <div class="about1-area position-relative overflow-hidden space-bottom unique-about" id="about-sec">
+    <div class="apply-stadum-area position-relative overflow-hidden space-bottom unique-about" id="about-sec">
         <div class="about-shep-2 shape-mockup d-none d-xxl-block" data-bottom="0%" data-right="0%">
           
         </div>
@@ -1037,9 +935,33 @@ About Area  3
                 <div class="row gy-60 align-items-center justify-content-center">
                     <div class="col-xl-6">
                         <div class="img-box1">
-                            <div class="img1 text-center text-sm-start wow fadeInLeft" data-wow-delay=".2s">
+                            <div class="img1 text-center text-sm-start vignette-box wow fadeInLeft" data-wow-delay=".2s">
                                 <img src="assets/img/ab.png" alt="About">
                             </div>
+                            <style>
+    .vignette-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px; /* optional */
+}
+
+.vignette-box::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(
+        to top,
+        rgba(0, 19, 80, 0.75),
+        rgba(7, 1, 65, 0)
+    );
+    pointer-events: none;
+}
+
+    </style>
+
                             <!-- <div class="img2 wow fadeInUp" data-wow-delay=".3s">
                                 <div class="position-relative">
                                     <img class="mb-25" src="assets/img/ab2.png" alt="About">
@@ -1097,24 +1019,61 @@ professionals and leaders.
         </div>
     </div>
     
-<br>
 <!--==============================
-Recruiter Section
-==============================-->
-<section class="recruiter-area space">
-     <!-- <div class="shape-mockup" data-top="0%" data-left="0%"><img src="assets/img/shape/feature-shep-home-1.png" alt="Stadum"></div> -->
-    <div class="container th-container4">
-        <div class="row justify-content-center text-center">
-            <div class="col-xl-8 col-md-8">
-                <div class="title-area">
-                    <span class="sub-title text-anim">RECRUITERS</span>
-                    <h2 class="sec-title text-anim2 text-bold">Our Top Recruiters</h2>
-                    <!-- <p class="sec-text mt-25 mb-0 wow fadeInUp" data-wow-delay=".3s">Connecting talent with industry leaders for exceptional career opportunities</p> -->
-                </div>
-                
-            </div>
+ Counter Area
+ ==============================-->
+  <section class="icon-stats">
+  <div class="container">
+    <div class="icon-grid">
+
+      <div class="icon-card">
+        <div class="icon-circle">
+          <i class="fas fa-award"></i>
         </div>
-        <div class="row mt-50">
+        <h3><span class="counter-number">25</span>+</h3>
+        <p>Years of Excellence</p>
+      </div>
+
+      <div class="icon-card">
+        <div class="icon-circle">
+          <i class="fas fa-user-graduate"></i>
+        </div>
+        <h3><span class="counter-number">1</span> Lac</h3>
+        <p>Global Alumni</p>
+      </div>
+
+      <div class="icon-card">
+        <div class="icon-circle">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <h3><span class="counter-number">100</span>%</h3>
+        <p>Placement Assistance</p>
+      </div>
+
+      <div class="icon-card">
+        <div class="icon-circle">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3><span class="counter-number">88</span> LPA</h3>
+        <p>Highest Package</p>
+      </div>
+
+    </div>
+  </div> 
+  <div class="row justify-content-lg-center justify-content-center align-items-center">
+                <div class="col-lg-8 col-12" style="margin-top:100px;">
+                    <div class="title-area text-center text-lg-center">
+                        <span class="sub-title1 text-anim">Recruiters</span>
+                        <h2 class="sec-title text-anim2" style="color: #F0F0F0; font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 2.5rem;">Our <span style="color:#ffd700;">Top </span>Hiring Partners</h2>
+                    </div>
+                </div>
+             
+            </div>
+   <div class="row mt-50">
             <div class="col-12">
                 <div class="recruiter-marquee">
                     <div class="swiper th-slider marquee-slider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":"auto"}},"autoplay":{"delay":0,"disableOnInteraction":false},"noSwiping":"true","speed":1000,"spaceBetween":50}'>
@@ -1122,182 +1081,182 @@ Recruiter Section
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/1.png" alt="Recruiter 1" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/1.png" alt="Recruiter">
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/2.png" alt="Recruiter 2" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/2.png" alt="Recruiter" >
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/3.png" alt="Recruiter 3" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/3.png" alt="Recruiter" >
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/4.png" alt="Recruiter 4" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/4.png" alt="Recruiter" >
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/5.png" alt="Recruiter 5" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/5.png" alt="Recruiter" >
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/6.png" alt="Recruiter 6" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/6.png" alt="Recruiter" >
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/7.png" alt="Recruiter 7" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/7.png" alt="Recruiter ">
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/8.png" alt="Recruiter 8" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/8.png" alt="Recruiter ">
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/9.png" alt="Recruiter 9" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/9.png" alt="Recruiter " >
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/10.png" alt="Recruiter 10" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/10.png" alt="Recruiter " >
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/11.png" alt="Recruiter 11" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/11.png" alt="Recruiter " >
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/12.png" alt="Recruiter 12" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/12.png" alt="Recruiter " >
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/13.png" alt="Recruiter 13" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/13.png" alt="Recruiter " >
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/14.png" alt="Recruiter 14" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/14.png" alt="Recruiter " >
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/15.png" alt="Recruiter 15" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/15.png" alt="Recruiter " >
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/16.png" alt="Recruiter 16" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/16.png" alt="Recruiter ">
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/17.png" alt="Recruiter 17" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/17.png" alt="Recruiter " >
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/18.png" alt="Recruiter 18" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/18.png" alt="Recruiter " >
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/19.png" alt="Recruiter 19" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/19.png" alt="Recruiter " >
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/20.png" alt="Recruiter 20" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/20.png" alt="Recruiter " >
                                     </div>
                                 </div>
                             </div>
                              <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/21.png" alt="Recruiter 21" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/21.png" alt="Recruiter " >
                                     </div>
                                 </div>
                             </div>
                              <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/22.png" alt="Recruiter 22" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/22.png" alt="Recruiter " >
                                     </div>
                                 </div>
                             </div>
                              <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/23.png" alt="Recruiter 23" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/23.png" alt="Recruiter " >
                                     </div>
                                 </div>
                             </div>
                              <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/24.png" alt="Recruiter 24" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/24.png" alt="Recruiter">
                                     </div>
                                 </div>
                             </div>
                              <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/25.png" alt="Recruiter 25" style="max-width: 180px; height: auto;">
+                                        <img src="assets/img/logo/25.png" alt="Recruiter " >
                                     </div>
                                 </div>
                             </div>
                              <div class="swiper-slide">
                                 <div class="marquee-card">
                                     <div class="color-masking">
-                                        <img src="assets/img/logo/26.png" alt="Recruiter 26" style="max-width: 180px; height: auto; margin-top: 50px;">
+                                        <img src="assets/img/logo/26.png" alt="Recruiter">
                                     </div>
                                 </div>
                             </div>
@@ -1308,104 +1267,79 @@ Recruiter Section
         </div>
     </div>
     <!-- Mobile Recruiter Slider (Only for Small Screens) -->
-<div class="recruiter-mobile-slider"
-     style="display:none; margin-top:30px;">
+<!-- Mobile Recruiter Slider -->
+<div class="recruiter-mobile-slider">
 
-    <div class="swiper recruiterSwiperMobile">
+  <div class="swiper recruiterSwiperMobile">
 
-        <div class="swiper-wrapper">
+    <div class="swiper-wrapper">
 
-            <!-- Slide 1 : 6 Logos -->
-            <div class="swiper-slide">
-                <div style="
-                    display:grid;
-                    grid-template-columns:repeat(2,1fr);
-                    gap:20px;
-                    justify-items:center;
-                    align-items:center;
-                         
-                ">
-                    <img src="assets/img/logo/1.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                    <img src="assets/img/logo/2.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                    
-                    <img src="assets/img/logo/3.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                    <img src="assets/img/logo/4.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                    <img src="assets/img/logo/5.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                    <img src="assets/img/logo/6.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                       <img src="assets/img/logo/7.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                    <img src="assets/img/logo/8.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                </div>
-            </div>
-
-            <!-- Slide 2 : 6 Logos -->
-            <div class="swiper-slide">
-                <div style="
-                    display:grid;
-                    grid-template-columns:repeat(2,1fr);
-                    gap:20px;
-                    justify-items:center;
-                    align-items:center;
-                   
-                ">
-                 
-                    <img src="assets/img/logo/9.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                    <img src="assets/img/logo/10.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                    <img src="assets/img/logo/11.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                    <img src="assets/img/logo/12.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                      <img src="assets/img/logo/13.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                    <img src="assets/img/logo/14.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                     <img src="assets/img/logo/15.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                    <img src="assets/img/logo/16.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                </div>
-            </div>
-                  <!-- Slide 3 : 6 Logos -->
-            <div class="swiper-slide">
-                <div style="
-                    display:grid;
-                    grid-template-columns:repeat(2,1fr);
-                    gap:20px;
-                    justify-items:center;
-                    align-items:center;
-                    
-                ">
-                 
-                  
-                    <img src="assets/img/logo/17.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                    <img src="assets/img/logo/18.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                      <img src="assets/img/logo/19.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                    <img src="assets/img/logo/20.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                        <img src="assets/img/logo/21.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                    <img src="assets/img/logo/22.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                    <img src="assets/img/logo/23.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                    <img src="assets/img/logo/24.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-
-                </div>
-            </div>
-                  <!-- Slide 4 : 6 Logos -->
-            <div class="swiper-slide">
-                <div style="
-                    display:grid;
-                    grid-template-columns:repeat(2,1fr);
-                    gap:20px;
-                    justify-items:center;
-                    align-items:center;
-                     
-                ">
-                  
-                  
-                     <img src="assets/img/logo/25.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                    <img src="assets/img/logo/26.png" style="max-width:120px;height:auto;border: 3px solid #071952; padding: 10px;  border-radius: 10px;">
-                </div>
-            </div>
-        
-        
-          </div>
-        
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="mobile-logo-grid">
+          <div class="logo-card"><img src="assets/img/logo/1.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/2.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/3.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/4.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/5.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/6.png"></div>
         </div>
+      </div>
 
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="mobile-logo-grid">
+          <div class="logo-card"><img src="assets/img/logo/7.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/8.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/9.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/10.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/11.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/12.png"></div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="mobile-logo-grid">
+          <div class="logo-card"><img src="assets/img/logo/13.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/14.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/15.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/16.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/17.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/18.png"></div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide">
+        <div class="mobile-logo-grid">
+          <div class="logo-card"><img src="assets/img/logo/19.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/20.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/21.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/22.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/23.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/24.png"></div>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="swiper-slide">
+        <div class="mobile-logo-grid">
+          <div class="logo-card"><img src="assets/img/logo/25.png"></div>
+          <div class="logo-card"><img src="assets/img/logo/26.png"></div>
+        </div>
+      </div>
+
+    </div>
+
+   
+
+  </div>
 
 </div>
-</section>
+
+
+
 <script>
 let recruiterSwiperMobile;
 
@@ -1471,6 +1405,182 @@ function toggleRecruiterLayout() {
 window.addEventListener('load', toggleRecruiterLayout);
 window.addEventListener('resize', toggleRecruiterLayout);
 </script>
+</section>
+
+
+
+<style>
+    /* Mobile Slider Wrapper */
+.recruiter-mobile-slider {
+  display: none;
+  margin-top: 35px;
+}
+
+/* Grid Layout */
+.mobile-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+/* Logo Card */
+.logo-card {
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transition: all 0.3s ease;
+}
+
+
+/* Logo Image */
+.logo-card img {
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+/* Mobile Padding */
+@media (max-width: 576px) {
+  .logo-card img {
+    max-width: 105px;
+  }
+}
+
+  .icon-stats {
+  background: #071952;
+  padding: 100px 0;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 35px;
+}
+
+.icon-card {
+   background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  padding: 25px 25px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  transition: 0.4s ease;
+  position: relative;
+}
+
+/* .icon-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+} */
+
+.icon-circle {
+  width: 75px;
+  height: 75px;
+  background: #ffd700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  font-size: 28px;
+  color: #071952;
+  box-shadow: 0 8px 20px rgba(200,163,73,0.4);
+}
+
+.icon-card h3 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #F0F0F0;
+  margin-bottom: 8px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.icon-card p {
+  font-size: 20px;
+  font-weight: bold;
+ 
+  color: #F0F0F0;
+}
+/* Recruiter Card Style */
+.marquee-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px 25px;
+  min-width: 200px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effect */
+.marquee-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.18);
+}
+
+/* Logo Inside Card */
+.color-masking img {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+
+
+/* Glass Reflection Effect */
+.marquee-card::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.4),
+    transparent
+  );
+  transform: rotate(25deg);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.marquee-card:hover::after {
+  opacity: 1;
+  left: 100%;
+}
+
+/* Mobile Card Style */
+.recruiter-mobile-slider img {
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transition: 0.3s ease;
+}
+
+.recruiter-mobile-slider img:hover {
+  transform: scale(1.05);
+}
+
+/* Smooth Swiper */
+.recruiter-marquee .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+</style>
+  
+
 <style>
 /* ===== SECTION STYLE ===== */
 
@@ -1481,7 +1591,7 @@ window.addEventListener('resize', toggleRecruiterLayout);
 
 /* Card Design */
 .collab-card {
-    background: #fff;
+    background: #F0F0F0;
     padding: 25px;
     border-radius: 14px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
@@ -1507,12 +1617,11 @@ window.addEventListener('resize', toggleRecruiterLayout);
     .collab-card {
         padding: 15px;
         height: 100px;
-        margin-left: 20px;
+        margin:20px;
     }
 
     .collab-card img {
-        max-height: 90px;
-        width: auto;
+        max-height: 55px;
     }
 
     .title-area h2 {
@@ -1951,10 +2060,10 @@ style="padding:30px 0; background:#F0F0F0;">
           justify-items:center;
           align-items:center;
         ">
-          <img src="assets/img/logo/Accenture-logo.jpg" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
-<img src="assets/img/logo/Acmegrade.png" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
-<img src="assets/img/logo/Axis Bank.png" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
-<img src="assets/img/logo/bebo_technologies_pvt_ltd_logo.jpeg" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
+          <img src="assets/img/logo/Accenture-logo.jpg" style="max-height:100px;  padding:10px; border-radius:10px;">
+<img src="assets/img/logo/Acmegrade.png" style="max-height:100px;  padding:10px; border-radius:10px;">
+<img src="assets/img/logo/Axis Bank.png" style="max-height:100px; padding:10px; border-radius:10px;">
+<img src="assets/img/logo/bebo_technologies_pvt_ltd_logo.jpeg" style="max-height:100px; padding:10px; border-radius:10px;">
 </div>
       </div>
 <!-- Slide 2 -->
@@ -1966,10 +2075,10 @@ style="padding:30px 0; background:#F0F0F0;">
           justify-items:center;
           align-items:center;
         ">
-<img src="assets/img/logo/Coder Roots.png" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
-<img src="assets/img/logo/EA.svg" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
-<img src="assets/img/logo/Golden Tulip.png" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
-<img src="assets/img/logo/Google.webp" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
+<img src="assets/img/logo/Coder Roots.png" style="max-height:100px; padding:10px; border-radius:10px;">
+<img src="assets/img/logo/EA.svg" style="max-height:100px;  padding:10px; border-radius:10px;">
+<img src="assets/img/logo/Golden Tulip.png" style="max-height:100px; padding:10px; border-radius:10px;">
+<img src="assets/img/logo/Google.webp" style="max-height:100px; padding:10px; border-radius:10px;">
         </div>
       </div>
   <!-- Slide 3 -->
@@ -1981,10 +2090,10 @@ style="padding:30px 0; background:#F0F0F0;">
           justify-items:center;
           align-items:center;
         ">
-<img src="assets/img/logo/HCL Tech.png" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
-<img src="assets/img/logo/HDFC-Bank-logo.jpg" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
-<img src="assets/img/logo/Hyatt Centric.png" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
-<img src="assets/img/logo/Hyatt Regency.png" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
+<img src="assets/img/logo/HCL Tech.png" style="max-height:100px; padding:10px; border-radius:10px;">
+<img src="assets/img/logo/HDFC-Bank-logo.jpg" style="max-height:100px; padding:10px; border-radius:10px;">
+<img src="assets/img/logo/Hyatt Centric.png" style="max-height:100px; padding:10px; border-radius:10px;">
+<img src="assets/img/logo/Hyatt Regency.png" style="max-height:100px; padding:10px; border-radius:10px;">
         </div>
       </div>
   <!-- Slide 4 -->
@@ -1996,10 +2105,10 @@ style="padding:30px 0; background:#F0F0F0;">
           justify-items:center;
           align-items:center;
         ">
-<img src="assets/img/logo/Radisson.png" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
-<img src="assets/img/logo/Redsky Advance Solutions.jpeg" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
-<img src="assets/img/logo/Relinns Technologies.webp" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
-<img src="assets/img/logo/Solitaire Infosys.png" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
+<img src="assets/img/logo/Radisson.png" style="max-height:100px;  padding:10px; border-radius:10px;">
+<img src="assets/img/logo/Redsky Advance Solutions.jpeg" style="max-height:100px; padding:10px; border-radius:10px;">
+<img src="assets/img/logo/Relinns Technologies.webp" style="max-height:100px; padding:10px; border-radius:10px;">
+<img src="assets/img/logo/Solitaire Infosys.png" style="max-height:100px; padding:10px; border-radius:10px;">
         </div>
       </div>
   <!-- Slide 5 -->
@@ -2011,10 +2120,10 @@ style="padding:30px 0; background:#F0F0F0;">
           justify-items:center;
           align-items:center;
         ">
-<img src="assets/img/logo/Tech_Mahindra_New_Logo.svg.png" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
-<img src="assets/img/logo/The_Leela_Palaces,_Hotels_and_Resorts_logo.svg.png" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
-<img src="assets/img/logo/the_oberoi_group_logo.jpeg" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
-<img src="assets/img/logo/Vardhman A&E Threads.png" style="max-height:100px; border:#071952 3px solid; padding:10px; border-radius:10px;">
+<img src="assets/img/logo/Tech_Mahindra_New_Logo.svg.png" style="max-height:100px;  padding:10px; border-radius:10px;">
+<img src="assets/img/logo/The_Leela_Palaces,_Hotels_and_Resorts_logo.svg.png" style="max-height:100px; padding:10px; border-radius:10px;">
+<img src="assets/img/logo/the_oberoi_group_logo.jpeg" style="max-height:100px; padding:10px; border-radius:10px;">
+<img src="assets/img/logo/Vardhman A&E Threads.png" style="max-height:100px; padding:10px; border-radius:10px;">
 
         </div>
       </div>
@@ -2459,9 +2568,14 @@ Hospitality & Catering Management
 
   </div>
 </section>
-<br>
-<br>
- <div class="highlight-strip">
+
+
+<!--==============================
+Team Area  
+==============================-->
+     <br>
+
+  <div class="highlight-strip">
     <div class="marquee">
         <span>
             LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • LIFE AT <strong>CT MAQSUDAN</strong> • 
@@ -2479,16 +2593,223 @@ Hospitality & Catering Management
         </span>
     </div>
 </div>
-
-<!--==============================
-Team Area  
-==============================-->
-     
-
-
   
 
- <section class="campus-area-2 position-relative overflow-hidden space" id="campus-sec">
+ 
+       <section class="maqsudan-campus-section d-none d-md-block">
+
+
+    <div class="container-fluid p-0 maqsudan-campus">
+
+        <!-- Row 1 -->
+        <div class="row g-0">
+            <div class="col-lg-7 col-md-12 box"
+                style="background-image:url('assets/img/banner.png');">
+                <!-- <div class="content">
+                    <h3>I Love CT</h3>
+                    <p>CT is not just our brand, it is our identity.</p>
+                </div> -->
+            </div>
+
+            <div class="col-lg-5 col-md-12 box"
+                style="background-image:url('assets/img/campus/maq2.png');">
+                <!-- <div class="content">
+                    <h3>Life at CT</h3>
+                    <p>The most vibrant campus with unlimited learning experiences.</p>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row g-0">
+            <div class="col-lg-5 col-md-12 box"
+                style="background-image:url('assets/img/campus/maq3.jpeg');">
+                <!-- <div class="content">
+                    <h3>Events & More</h3>
+                    <p>A blend of cultural, academic, and entertainment activities.</p>
+                </div> -->
+            </div>
+
+            <div class="col-lg-7 col-md-12 box"
+                style="background-image:url('assets/img/b22.JPG');">
+                <!-- <div class="content">
+                    <h3>CT Mirror</h3>
+                    <p>A reflection of everything happening across the campus.</p>
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+/* ============================= */
+/* GLOBAL FIX */
+/* ============================= */
+
+html, body {
+    overflow-x: hidden;
+}
+
+/* ============================= */
+/* SECTION WRAPPER */
+/* ============================= */
+
+.maqsudan-campus-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* ============================= */
+/* MAIN GRID */
+/* ============================= */
+
+.maqsudan-campus {
+    padding: 0;
+}
+
+/* ============================= */
+/* CAMPUS BOX */
+/* ============================= */
+
+.maqsudan-campus .box {
+    position: relative;
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* Overlay Gradient */
+
+.maqsudan-campus .box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background: linear-gradient(to right, rgba(0,0,0,0.65), rgba(0,0,0,0)); */
+    z-index: 1;
+}
+
+/* ============================= */
+/* CONTENT */
+/* ============================= */
+
+.maqsudan-campus .content {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    z-index: 2;
+    color: #ffffff;
+    max-width: 75%;
+}
+
+.maqsudan-campus .content h3 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.maqsudan-campus .content p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* ============================= */
+/* LARGE SCREENS */
+/* ============================= */
+
+@media (min-width: 1400px) {
+
+    .maqsudan-campus .box {
+        height: 520px;
+    }
+
+    .maqsudan-campus .content h3 {
+        font-size: 44px;
+    }
+
+    .maqsudan-campus .content p {
+        font-size: 20px;
+    }
+}
+
+/* ============================= */
+/* TABLETS */
+/* ============================= */
+
+@media (max-width: 991px) {
+
+    .maqsudan-campus .box {
+        height: 340px;
+    }
+
+    .maqsudan-campus .content {
+        left: 25px;
+        bottom: 25px;
+        max-width: 85%;
+    }
+
+    .maqsudan-campus .content h3 {
+        font-size: 30px;
+    }
+
+    .maqsudan-campus .content p {
+        font-size: 16px;
+    }
+}
+
+/* ============================= */
+/* MOBILES */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .maqsudan-campus .box {
+        height: 300px;
+    }
+
+    .maqsudan-campus .content {
+        left: 20px;
+        bottom: 20px;
+        max-width: 80%;
+    }
+
+    .maqsudan-campus .content h3 {
+        font-size: 24px;
+    }
+
+    .maqsudan-campus .content p {
+        font-size: 15px;
+    }
+}
+
+/* ============================= */
+/* SMALL MOBILES */
+/* ============================= */
+
+@media (max-width: 480px) {
+
+    .maqsudan-campus .box {
+        height: 300px;
+    }
+
+    .maqsudan-campus .content h3 {
+        font-size: 20px;
+    }
+
+    .maqsudan-campus .content p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .maqsudan-campus-section {
+        display: none !important;
+    }
+}
+
+</style>
+<section class="campus-area-2 position-relative overflow-hidden space" id="campus-sec">
         <div class="container th-container3">
             <div class="row justify-content-lg-between justify-content-center align-items-center">
                 <div class="col-lg-8 col-12">
@@ -2629,6 +2950,14 @@ Campus Area Home 2
             </div>
         </div>
     </section>
+    <style>
+        @media (min-width: 992px) {
+    #campus-sec {
+        display: none !important;
+    }
+}
+
+        </style>
    <!--==============================
  Testimonial Video Section
 ==============================-->
