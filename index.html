@@ -150,8 +150,22 @@
                 width: 100%;
             }
             .unique-about {
-                margin-top: 0;
+        padding: 20px;
+         margin: 10px 0;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+            /* Tablet specific for about section spacing */
+            @media (min-width: 768px) and (max-width: 991px) {
+                .unique-about {
+                    margin: 0;
+                    padding: 10px;
+                }
+                .th-hero-wrapper.hero-1 {
+                    height: 40vh !important;
+                }
             }
+
         }
 
         @media (max-width: 767px) {
@@ -309,6 +323,65 @@
         @media (max-width: 991px) {
             .space-bottom {
                 padding-bottom: 20px !important;
+            }
+        }
+
+        /* Tablet specific responsiveness */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .space {
+                padding: 60px 0;
+            }
+            .hero-style1 .hero-title {
+                font-size: 2.5rem;
+            }
+            .about1-area .title-area h2 {
+                font-size: 2.2rem;
+            }
+            .recruiter-area .title-area h2 {
+                font-size: 2.2rem;
+            }
+            .placement-area .title-area h2 {
+                font-size: 2.2rem;
+            }
+            .popular-course-area-1 .sec-title {
+                font-size: 2rem;
+            }
+            .partners-wrap1 {
+                gap: 18px;
+            }
+            .partners-card {
+                width: 140px;
+            }
+            .collab-card {
+                max-width: 180px;
+            }
+            .why-area-3 .title-area h2,
+            .testi-area3 .title-area h2,
+            .team-area .title-area h2,
+            .community-area-2 .title-area h2,
+            .mentorship-area-1 .title-area h2,
+            .banner-area-1 .box-title,
+            .blog-arae-3 .title-area h2,
+            .contact-area-1 .title-area h2 {
+                font-size: 2rem;
+            }
+            .placement-banner-slider .banner-slide {
+                height: 450px !important;
+            }
+            .full-image-banner {
+                height: 550px !important;
+            }
+            .full-image-banner .banner-text h2 {
+                font-size: 2rem !important;
+            }
+            .mousSwiperTop, .mousSwiperBottom {
+                padding: 25px 15px;
+            }
+            .popular-course-area-1 .table {
+                font-size: 15px;
+            }
+            .popular-course-area-1 .table th, .popular-course-area-1 .table td {
+                padding: 10px;
             }
         }
 
