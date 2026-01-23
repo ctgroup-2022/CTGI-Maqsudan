@@ -378,7 +378,7 @@ h4,
 h5,
 .h6,
 h6 {
-  font-family: var(--title-font);
+  font-family: serif;
   color: var(--title-color);
   text-transform: none;
   font-weight: 700;
@@ -11826,8 +11826,8 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
 .th-hero-bg img {
   height:100%;
   width: 100%;
-  object-fit: cover;
-  background-size: cover;
+  object-fit: contain;
+  background-size: contain;
 }
 
 /* Hero 1 ---------------------------------- */
@@ -11851,7 +11851,7 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
     }
 
     #hero .th-hero-bg {
-        background-size: 100% auto;
+        background-size: contain;
         background-position: center top;
     }
 }
@@ -11862,7 +11862,7 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
     }
 
     #hero .th-hero-bg {
-        background-size: 100% auto;
+        background-size: contain;
         background-position: center top;
     }
 }
@@ -28043,7 +28043,7 @@ span.select2-selection.select2-selection--single:focus {
 .apply-stadum-thumb {
   position: relative;
   z-index: 3;
-  min-width: 696px;
+  min-width: 400px;
   margin-left: 50px;
   margin-right: -10%;
   /* Extra large devices */
@@ -28105,7 +28105,7 @@ span.select2-selection.select2-selection--single:focus {
   top: 0;
   right: 0;
   content: "";
-  background-color: #CB0404;
+  background-color: #071952;
   -webkit-clip-path: polygon(52% 0, 100% 0%, 100% 100%, 0 100%);
           clip-path: polygon(52% 0, 100% 0%, 100% 100%, 0 100%);
   /* Large devices */
@@ -31932,10 +31932,7 @@ Mentorship Area Home 3
 /*# sourceMappingURL=style.css.map */
 
 .unique-about {
-   
- 
-    
-    padding: 20px;
+   padding: 20px;
     margin: 20px 0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -32102,9 +32099,10 @@ Mentorship Area Home 3
 }
 
 .feature-card h4 {
-  font-size: 20px;
+  /* font-size: 20px; */
   margin-bottom: 10px;
   color: #F0F0F0;
+ /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
 .feature-card p {
